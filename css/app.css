@@ -1,0 +1,558 @@
+/*  
+    app.css
+    created by Wilson Wei Wei
+    on 2017-05-25
+*/
+
+@font-face {
+    font-family: 'webfont';
+    src: url('webfont.eot'); /* IE9*/
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('webfont.woff') format('woff'), /* chrome、firefox */
+    url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+html {
+    font-size: 100%;
+    /* 1rem = 16px; Chrome, Safari */
+    font-family: "webfont" !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, header, section, footer, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-style: normal;
+    color: rgba(102, 102, 102, .87);
+}
+
+section {
+    position: relative;
+}
+
+header, section, nav, i, img, footer {
+    display: block;
+}
+
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    text-align: center;
+    background: #fff;
+}
+
+header {
+    top: 0;
+    z-index: 998;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    bottom: 0;
+    z-index: 999
+}
+
+nav {
+    width: 100%;
+    height: 5.625rem;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    display: inline;
+    font-weight: lighter;
+    line-height: 0;
+    font-family: 'webfont';
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+h1 {
+    font-size: 1.125rem;    /* 18px */
+    /* Display */
+}
+
+h2 {
+    font-size: 1rem;    /* 16px */
+    /* Headline */
+}
+
+h3 {
+    font-size: .875rem !important;    /* 14px */
+    /* Heading */
+}
+
+h4 {
+    font-size: .75rem;    /* 12px */
+    color: rgba(204, 204, 204, .87);
+    /* Subheading */
+}
+
+h5 {
+    font-size: .625rem;    /* 10px */
+    /* Label */
+}
+
+p {
+    font-size: 0.875rem !important;    /* 14px */
+    /* Content */
+}
+
+i {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+    background-color: #fafafa;
+}
+
+.headline {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: rgba(51, 51, 51, .87);
+}
+
+.icon-1 {
+    height: 3rem;
+    width: 3rem;
+    /* main icon */
+}
+
+.icon-2 {
+    height: 2rem;
+    width: 2rem;
+    /* footer nav icon */
+}
+
+.icon-3 {
+    height: 1.5rem;
+    width: 1.5rem;
+    /* menu icon */
+}
+
+.header-icon-search {
+    position: inherit;
+    right: 0;
+    top: 0;
+    margin: 4px 0;
+    background-image: url(../icon/header_icon_search.png); 
+}
+
+.uk-dotnav-contrast>.uk-active>* {
+    background: none;
+    border: 1px solid rgba(255,255,255,.9);
+    box-sizing: border-box;
+}
+
+.uk-dotnav-contrast>*>* {
+    background: rgba(255,255,255,.9);
+}
+
+.uk-dotnav>*>* {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,.9);
+}
+
+.bar {
+    width: 100%;
+    height: 3rem;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bar-heading, .bar-subheading, .bar-text {
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 0 0 1rem;
+}
+
+.bar-heading {
+    float: left;
+    color: rgba(51, 51, 51, .87);
+}
+
+.bar-subheading {
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#notice-bar {
+}
+
+#notice {
+    color: rgba(243, 156, 18, .87);
+}
+
+#message {
+    color: rgba(0, 162, 255, .87);
+}
+
+.bar-text {
+    color: rgba(102, 102, 102, .87);
+}
+
+.nav {
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+}
+
+.nav>i {
+    margin: .5rem auto 0 auto;
+}
+
+.nav>h1 {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    margin: .5rem auto 0 auto;
+}
+
+.nav>h3 {
+    color: rgba(51, 51, 51, .87);
+}
+
+.nav-icon-weike {
+    background-image: url(../icon/home_nav_icon_weike.png);
+}
+
+.nav-icon-bookshelf {
+    background-image: url(../icon/home_nav_icon_bookshelf.png);
+}
+
+.nav-icon-bookstore {
+    background-image: url(../icon/home_nav_icon_bookstore.png);
+}
+
+.nav-icon-support {
+    background-image: url(../icon/home_nav_icon_support.png);
+}
+
+.block, .bar-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 0 0;
+    background-color: #fff;
+}
+
+.block {
+    padding: 0 0 1rem 0;
+}
+
+.bar-block {
+    padding: 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+#yuwen-weike .bar-block:first-child {
+    margin-top: 0;
+}
+
+.weike-ad-banner {
+    margin: 1rem 0 0 0;
+}
+
+.weike-ad-banner:first-child {
+    margin-top: 0;
+}
+
+.weike-panel-medium {
+    padding-bottom: 1rem;
+    background: #fff;
+}
+
+.weike-title-center, .weike-title-left {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.weike-title-center {
+    margin-right: 25px;    
+}
+
+.weike-title-left {
+    margin-left: 1rem;
+}
+
+.weike-lessons-center, .weike-lessons-left, .weike-fee-center, .weike-fee-right {
+    display: inline-block;
+    height: .75rem;
+    line-height: .75rem;
+}
+
+.weike-lessons-center {
+
+}
+
+.weike-lessons-left {
+    margin: 0 0 0 1rem;
+    float: left;
+}
+
+.weike-fee-center {
+    color: rgba(241, 196, 15, .87);
+    margin-right: 25px;
+}
+
+.weike-fee-right {
+    color: rgba(241, 196, 15, .87);
+    float: right;
+    margin-right: 1rem;
+}
+
+.book-grid {
+    margin: 0 10px 0 0;
+}
+
+.slogan-bar {
+    margin: 0 0 3.5rem 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.slogan-bar>p {
+    width: 80%;
+    height: auto;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer-nav {
+    width: 25%;
+    height: 3.5rem;
+    float: left;
+    background: #fff;
+    text-align: center;
+}
+
+.footer-nav>i {
+    margin: .375rem auto 0 auto;
+}
+
+.footer-nav h5 {
+    display: block;
+    height: .625rem;
+    line-height: .625rem;
+    color: rgba(153, 153, 153, .87);
+}
+
+.footer-nav.uk-active h5 {
+    color: rgba(51, 51, 51, .87);
+}
+
+.footer-nav:nth-child(1) i {
+    background-image: url(../icon/main_icon_home_default.png);
+}
+
+.footer-nav:nth-child(1).uk-active i {
+    background-image: url(../icon/main_icon_home_active.png);
+}
+
+.footer-nav:nth-child(2) i {
+    background-image: url(../icon/main_icon_weike_default.png);
+}
+
+.footer-nav:nth-child(2).uk-active i {
+    background-image: url(../icon/main_icon_weike_active.png);
+}
+
+.footer-nav:nth-child(3) i {
+    background-image: url(../icon/main_icon_discovery_default.png);
+}
+
+.footer-nav:nth-child(3).uk-active i {
+    background-image: url(../icon/main_icon_discovery_active.png);
+}
+
+.footer-nav:nth-child(4) i {
+    background-image: url(../icon/main_icon_me_default.png);
+}
+
+.footer-nav:nth-child(4).uk-active i {
+    background-image: url(../icon/main_icon_me_active.png);
+}
+
+.book-icon-menu {
+    background-image: url(../icon/book_icon_menu.png);
+}
+
+.header-switcher-group{
+    margin: 0;
+    padding: 0;
+}
+
+.header-switcher-group .uk-active{
+    border-bottom: 2px rgba(51, 51, 51, .87) solid;
+    box-sizing: border-box;
+}
+
+.header-switcher {
+    float: left;
+    width: 20%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+
+header h2 {
+    color: rgba(204, 204, 204, .87);
+}
+
+header .uk-active h2 {
+    color: rgba(51, 51, 51, .87);
+}
+
+.bar-icon-left {
+    float: left;
+    margin-right: -1rem;
+}
+
+.bar-icon-right {
+    float: right;
+}
+
+.bar-icon-forward {
+    background-image: url(../icon/panel_icon_forward.png);
+}
+
+.bar-icon-grid {
+    background-image: url(../icon/panel_icon_grid.png);
+}
+
+.bar-icon-right-arrow {
+    background-image: url(../icon/panel_icon_right.png);
+    height: .75rem;
+    width: .5rem;
+    float: left;
+    margin: 1.125rem 0 1.125rem 1rem;
+}
+
+.me-content {
+    background-color: #fafafa;
+}
+
+.user-content {
+    top: 0;
+}
+
+.user-block {
+    width: 100%;
+    height: 11.25rem;
+    /*background: url(../image/main-banner.png) no-repeat;*/
+    background-color: #333;
+    /*background-size: cover;*/
+}
+
+#user-vip{
+    color: rgba(241, 196, 15, .87);
+}
+
+.user-icon-message {
+    background-image: url(../icon/panel_icon_message.png);
+}
+
+#user-role {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, .87);
+}
+
+#user-name {
+    position: absolute;
+    right: 6rem;
+    bottom: 0;
+    color: white;
+}
+
+#user-portrait {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.portrait {
+    width: 4rem;
+    height: 4rem;
+    /*background-color: #666;*/
+    background: url(../image/portrait.jpg) no-repeat;
+    background-size: cover;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.bar-icon-charge {
+    background-image: url(../icon/bar_icon_charge.png);
+}
+
+.bar-icon-history {
+    background-image: url(../icon/bar_icon_history.png);
+}
+
+.bar-icon-bill {
+    background-image: url(../icon/bar_icon_bill.png);
+}
+
+.bar-icon-textbook {
+    background-image: url(../icon/bar_icon_textbook.png);
+}
+
+.bar-icon-settings {
+    background-image: url(../icon/bar_icon_settings.png);
+}
+
+.bar-icon-support {
+    background-image: url(../icon/bar_icon_support.png);
+}
+
+.bar-icon-aboutus {
+    background-image: url(../icon/bar_icon_aboutus.png);
+}
